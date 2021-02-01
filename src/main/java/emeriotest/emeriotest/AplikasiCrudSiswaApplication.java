@@ -1,0 +1,13 @@
+package emeriotest.emeriotest;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class AplikasiCrudSiswaApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(AplikasiCrudSiswaApplication.class, args);
+	}
+
+}
