@@ -28,5 +28,10 @@ ada beberapa rest api yang digunakan:
 4. (POST) http://localhost:8080/upload/siswa
     Content-Type: multipart/form-data; 
     upload file dengan format csv sebagai berikut
+    https://github.com/taufiksetiarso/emeriotest/blob/main/input/siswa.csv
     
+5. (POST) http://localhost:8080/upload/siswa
+    Content-Type: multipart/form-data; 
+    upload file dengan format csv sebagai berikut
+    https://github.com/taufiksetiarso/emeriotest/blob/main/input/nilai.csv
     
