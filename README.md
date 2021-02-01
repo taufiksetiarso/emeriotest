@@ -1,8 +1,14 @@
 # emeriotest
 
+cara menjalankan program
+1.clone https://github.com/taufiksetiarso/emeriotest
+2.buka IDE ,pastikan maven sudah ter install
+3.import dengan maven
+4.tunggu sampai semua dependency terdownload oleh IDE
+5.jalankan program 
 
 
-ada beberapa rest api yang digunakan:
+beberapa rest api yang digunakan:
 1. (GET) http://localhost:8080/inquiry-siswa
    filter yang bisa digunakan : nomorInduk,mataPelajaran,nama,nilai 
    bisa digunakan lebih dari 1 filter contoh : http://localhost:8080/inquiry-siswa?nomorInduk=2&nama=Dangote
