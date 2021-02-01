@@ -4,10 +4,7 @@ import emeriotest.emeriotest.model.Nilai;
 import emeriotest.emeriotest.service.NilaiSiswaService;
 import emeriotest.emeriotest.service.UploadService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
@@ -23,7 +20,7 @@ public class NilaiKelasController {
     @Autowired
     UploadService uploadService;
 
-    @PostMapping("/inquiry-siswa")
+    @GetMapping("/inquiry-siswa")
     private Object inquirySiswa(@RequestParam(name = "nomorInduk", required = false) String nomorInduk,
                                 @RequestParam(name = "nama", required = false) String nama,
                                 @RequestParam(name = "mataPelajaran", required = false) String mataPelajaran,
