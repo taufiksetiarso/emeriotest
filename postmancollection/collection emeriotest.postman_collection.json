@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "2c67009f-17de-4e42-8f6f-3b7f07e33905",
+		"name": "collection emeriotest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "upload nilai .csv",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Prismalink/Downloads/java_test/java_test/nilai.csv"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/upload/nilai",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"upload",
+						"nilai"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check rapot siswa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/inquiry-siswa?nomorInduk=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inquiry-siswa"
+					],
+					"query": [
+						{
+							"key": "nomorInduk",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check semua rapot siswa yang ada",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/inquiry-siswa",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inquiry-siswa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload siswa .csv",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Prismalink/Downloads/java_test/java_test/siswa.csv"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/upload/siswa",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"upload",
+						"siswa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hapus mata pelajaran",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomorInduk\":\"3\",\r\n    \"mataPelajaran\":\"sejarah\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/hapus-mapel",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hapus-mapel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update nilai pelajaran",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomorInduk\":\"3\",\r\n    \"mataPelajaran\":\"sejarah\",\r\n    \"nilai\":\"200\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/update-nilai",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"update-nilai"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
