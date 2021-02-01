@@ -25,16 +25,18 @@ ada beberapa rest api yang digunakan:
       "mataPelajaran":"sejarah"
    }
 
-4. (POST) http://localhost:8080/upload/siswa   (untuk mempermudah upload silahkan gunakan browser)
+4. (POST) http://localhost:8080/upload/siswa   (untuk mempermudah upload silahkan buka link di browser)
     Content-Type: multipart/form-data; 
     upload file dengan format csv sebagai berikut
     https://github.com/taufiksetiarso/emeriotest/blob/main/input/siswa.csv
     
-5. (POST) http://localhost:8080/upload/nilai (untuk mempermudah upload silahkan gunakan browser)
+5. (POST) http://localhost:8080/upload/nilai (untuk mempermudah upload silahkan buka link di browser)
     Content-Type: multipart/form-data; 
     upload file dengan format csv sebagai berikut
     https://github.com/taufiksetiarso/emeriotest/blob/main/input/nilai.csv
-    
+ 
+ 
+ untuk postaman collection rest api diatas bisa menggunakan yang ini 
     
     
     
