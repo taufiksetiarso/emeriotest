@@ -7,7 +7,7 @@ ada beberapa rest api yang digunakan:
 
 
 2. http://localhost:8080/update-nilai 
-   menggunakan metode post dengan body request seperti dibawah ini \n
+   menggunakan metode post dengan body request seperti dibawah ini 
   {
       "nomorInduk":"3",
       "mataPelajaran":"sejarah",
