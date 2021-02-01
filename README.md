@@ -27,5 +27,6 @@ ada beberapa rest api yang digunakan:
 
 4. (POST) http://localhost:8080/upload/siswa
     Content-Type: multipart/form-data; 
-    upload file format 
+    upload file dengan format csv sebagai berikut
+    
     
