@@ -42,7 +42,7 @@ beberapa rest api yang digunakan:
     https://github.com/taufiksetiarso/emeriotest/blob/main/input/nilai.csv
  
  
- untuk postaman collection rest api diatas bisa menggunakan yang ini 
+ untuk postaman collection rest api diatas bisa menggunakan https://github.com/taufiksetiarso/emeriotest/tree/main/postmancollection
     
     
     
